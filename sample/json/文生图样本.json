@@ -1,0 +1,45 @@
+{
+    "prompt": "",
+    "negative_prompt": "(worst quality:2), (low quality:2), (normal quality:2), lowres, normal quality, ((monochrome)), ((grayscale)), skin spots, acnes, skin blemishes, age spot, (ugly:1.331), (duplicate:1.331), (morbid:1.21), (mutilated:1.21), (tranny:1.331), mutated hands, (poorly drawn hands:1.5), blurry, (bad anatomy:1.21), (bad proportions:1.331), extra limbs, (disfigured:1.331), (missing arms:1.331), (extra legs:1.331), (fused fingers:1.61051), (too many fingers:1.61051), (unclear eyes:1.331), lowers, bad hands, missing fingers, extra digit,bad hands, missing fingers, (((extra arms and legs)))",
+    "seed": -1,
+    "batch_size": 1,
+    "n_iter": 1,
+    "steps": 20,
+    "cfg_scale": 7,
+    "width": 800,
+    "height": 480,
+    "restore_faces": true,
+    "tiling": false,
+    "eta": 0,
+    "script_args": [],
+    "sampler_index": "DPM++ SDE Karras",
+    "override_settings": {
+        "sd_model_checkpoint": "animevae.pt"
+    },
+    "alwayson_scripts": {
+        "ControlNet": {
+            "args": [
+                {
+                    "enabled": true,
+                    "control_mode": 0,
+                    "model": "control_v11p_sd15s2_lineart_anime_fp16 [c58f338b]",
+                    "module": "invert (from white bg & black line)",
+                    "weight": 1,
+                    "resize_mode": "Crop and Resize",
+                    "mask": null,
+                    "invert_image": false,
+                    "rgbbgr_mode": false,
+                    "lowvram": false,
+                    "processor_res": 512,
+                    "threshold_a": 64,
+                    "threshold_b": 64,
+                    "guidance_start": 0,
+                    "guidance_end": 1,
+                    "input_image": [
+                        "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+                    ]
+                }
+            ]
+        }
+    }
+}

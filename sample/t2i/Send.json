@@ -1,0 +1,45 @@
+{
+    "prompt": "",
+    "negative_prompt": "text,signature,watermark,simple background,toony,dated,low res,line art,flat colors",
+    "override_settings": {
+        "sd_model_checkpoint": "animevae.pt"
+    },
+    "seed": -1,
+    "batch_size": 1,
+    "n_iter": 1,
+    "steps": 20,
+    "cfg_scale": 7,
+    "width": 800,
+    "height": 480,
+    "restore_faces": true,
+    "tiling": false,
+    "eta": 0,
+    "script_args": [],
+    "sampler_index": "DPM++ SDE Karras",
+    "init_images": [
+        ""
+    ],
+    "alwayson_scripts": {
+        "ControlNet": {
+            "args": [
+                {
+                    "enabled": true,
+                    "module": "lineart",
+                    "model": "control_v11p_sd15s2_lineart_anime_fp16 [c58f338b]",
+                    "weight": 1,
+                    "mask": null,
+                    "invert_image": false,
+                    "resize_mode": 0,
+                    "rgbbgr_mode": false,
+                    "lowvram": false,
+                    "processor_res": 0,
+                    "threshold_a": 64,
+                    "threshold_b": 64,
+                    "guidance_start": 0,
+                    "guidance_end": 1,
+                    "controlmode": true
+                }
+            ]
+        }
+    }
+}

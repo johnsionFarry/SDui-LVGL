@@ -1,0 +1,77 @@
+{
+    "images": [
+        ""
+    ],
+    "parameters": {
+        "prompt": "2girls, blue hair, green eyes",
+        "negative_prompt": "NSFW, (worst quality:2), (low quality:2), (normal quality:2), lowres, normal quality, ((monochrome)), ((grayscale)), skin spots, acnes, skin blemishes, age spot, (ugly:1.331), (duplicate:1.331), (morbid:1.21), (mutilated:1.21), (tranny:1.331), mutated hands, (poorly drawn hands:1.5), blurry, (bad anatomy:1.21), (bad proportions:1.331), extra limbs, (disfigured:1.331), (missing arms:1.331), (extra legs:1.331), (fused fingers:1.61051), (too many fingers:1.61051), (unclear eyes:1.331), lowers, bad hands, missing fingers, extra digit,bad hands, missing fingers, (((extra arms and legs)))",
+        "styles": null,
+        "seed": -1,
+        "subseed": -1,
+        "subseed_strength": 0,
+        "seed_resize_from_h": -1,
+        "seed_resize_from_w": -1,
+        "sampler_name": null,
+        "batch_size": 1,
+        "n_iter": 1,
+        "steps": 20,
+        "cfg_scale": 7.5,
+        "width": 800,
+        "height": 480,
+        "restore_faces": true,
+        "tiling": null,
+        "do_not_save_samples": false,
+        "do_not_save_grid": false,
+        "eta": null,
+        "denoising_strength": 0,
+        "s_min_uncond": null,
+        "s_churn": null,
+        "s_tmax": null,
+        "s_tmin": null,
+        "s_noise": null,
+        "override_settings": null,
+        "override_settings_restore_afterwards": true,
+        "refiner_checkpoint": null,
+        "refiner_switch_at": null,
+        "disable_extra_networks": false,
+        "comments": null,
+        "enable_hr": false,
+        "firstphase_width": 0,
+        "firstphase_height": 0,
+        "hr_scale": 2.0,
+        "hr_upscaler": null,
+        "hr_second_pass_steps": 0,
+        "hr_resize_x": 0,
+        "hr_resize_y": 0,
+        "hr_checkpoint_name": null,
+        "hr_sampler_name": null,
+        "hr_prompt": "",
+        "hr_negative_prompt": "",
+        "sampler_index": "Euler",
+        "script_name": null,
+        "script_args": [],
+        "send_images": true,
+        "save_images": false,
+        "alwayson_scripts": {
+            "controlnet": {
+                "args": [
+                    {
+                        "enabled": true,
+                        "control_mode": 0,
+                        "model": "Scribble",
+                        "module": "invert",
+                        "weight": 1,
+                        "resize_mode": "Crop and Resize",
+                        "guidance_start": 0,
+                        "guidance_end": 1,
+                        "pixel_perfect": true,
+                        "processor_res": 512,
+                        "save_detected_map": false,
+                        "input_image": ""
+                    }
+                ]
+            }
+        }
+    },
+    "info": ""
+}

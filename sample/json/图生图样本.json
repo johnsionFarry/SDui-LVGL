@@ -1,0 +1,23 @@
+{
+    "prompt": "",
+    "negative_prompt": "xxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "seed": -1,
+    "batch_size": 1,
+    "n_iter": 1,
+    "steps": 20,
+    "cfg_scale": 7,
+    "width": 800,
+    "height": 480,
+    "restore_faces": true,
+    "tiling": false,
+    "eta": 0,
+    "script_args": [],
+    "sampler_index": "DPM++ SDE Karras",
+    "init_images": [
+        "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+    ],
+    "override_settings": {
+        "sd_model_checkpoint": "cetusMix_Whalefall2.safetensors [876b4c7ba5]",
+        "sd_vae": "Automatic"
+    }
+}

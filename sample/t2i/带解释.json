@@ -1,0 +1,61 @@
+{
+    "prompt": "1girl, blue hair, green eyes",
+    "negative_prompt": "NSFW, (worst quality:2), (low quality:2), (normal quality:2), lowres, normal quality, ((monochrome)), ((grayscale)), skin spots, acnes, skin blemishes, age spot, (ugly:1.331), (duplicate:1.331), (morbid:1.21), (mutilated:1.21), (tranny:1.331), mutated hands, (poorly drawn hands:1.5), blurry, (bad anatomy:1.21), (bad proportions:1.331), extra limbs, (disfigured:1.331), (missing arms:1.331), (extra legs:1.331), (fused fingers:1.61051), (too many fingers:1.61051), (unclear eyes:1.331), lowers, bad hands, missing fingers, extra digit,bad hands, missing fingers, (((extra arms and legs)))",
+    "seed": -1, // # 随机种子
+    //"sampler_name": "取样器（之间复制webui的名字就行）",
+    "cfg_scale": 7.5, //# 提示词相关性 越大越接近提示词
+    "width": 800, // # 宽 （注意要被16整除）
+    "height": 480, //# 高 （注意要被16整除）
+    "batch_size": 1, //# 批量数量 并行 显存不够会爆显存
+    "n_iter": 1, //# 批量数量 队列 显存不够排队一个一个来 和 batch_size 二选一
+    "steps": 20, //# 迭代步数
+    "return_grid": true, //# 返回网格预览 xl-base 好像没用
+    "restore_faces": true, //# 脸部修复
+    "send_images": true, //# 是否在响应中返回生成的图像
+    "save_images": false, //# 是否保存生成的图像 一般api设置成False
+    "do_not_save_samples": false, //# 是否保存samples 一般api设置成False
+    "do_not_save_grid": false, // # 是否保存网格的图像 一般api设置成False
+    "alwayson_scripts": {
+        "controlnet": {
+            "args": [
+                {
+                    "enabled": true, //# 启用
+                    "control_mode": 0, // # 对应webui 的 Control Mode 可以直接填字符串 推荐使用下标 0 1 2
+                    "model": "control_v11p_sd15_scribble_fp16 [4e6af23e]", //# 对应webui 的 Model 
+                    "module": "t2ia_sketch_pidi", //# 对应webui 的 Preprocessor 预处理器
+                    "weight": 0.45, //# 对应webui 的Control Weight
+                    "resize_mode": "Crop and Resize",
+                    "threshold_a": 200, //# 阈值a 部分control module会用上
+                    "threshold_b": 245, //# 阈值b
+                    "guidance_start": 0, //# 什么时候介入 对应webui 的 Starting Control Step
+                    "guidance_end": 0.7, //# 什么时候退出 对应webui 的 Ending Control Step
+                    "pixel_perfect": true, //# 像素完美 其实就是更换色彩通道顺序
+                    "processor_res": 512, //# 预处理器分辨率
+                    "save_detected_map": false, //# 因为使用了 controlnet API会返回生成controlnet的效果图，默认是True，如何不需要，改成False
+                    "input_image": "" // # 图片 格式为base64
+                }
+                //# 多个controlnet 在复制上面一个字典下来就行
+            ]
+        }
+    },
+    // # 下面的很少用
+    "enable_hr": true, //# 是否开启高清修复
+    "denoising_strength": 0.5, //# 去噪强度 要求enable_hr = True
+    "firstphase_width": 0,
+    //# firstphase_width 和firstphase_height 定义了图像的初始分辨率。在图像生成的第一阶段，这些值决定了图像的大小。如果这些值设置为0，系统可能会使用默认或预设的分辨率。
+    "firstphase_height": 0,
+    "hr_scale": 1, //# 放大倍数 对应webui Upscale by
+    "hr_upscaler": "R-ESRGAN 4x+ Anime6B", // # 对应webui 的 Upscaler
+    "hr_second_pass_steps": 0, //# 迭代步数 对应webui 的 Hires steps。
+    "hr_resize_x": 0, //# 不放大，指定宽高 对应webui Resize width to 和Resize height to
+    "hr_resize_y": 0, //# 不放大，指定宽高 对应webui Resize width to 和Resize height to
+    "hr_checkpoint_name": "anything-v5-PrtRE.safetensors [7f96a1a9ca]", //# 高分辨率模式下使用的大模型昵称。
+    "hr_sampler_name": "DPM++ 2M SDE Karras", // # 高分辨率模式下使用的采样器名称。
+    "hr_prompt": "", //# 高分辨率模式下使用的提示词名称。
+    "hr_negative_prompt": "", // # 高分辨率模式下使用的反向提示词名称。
+    "override_settings": {
+        "sd_model_checkpoint": "anything-v5-PrtRE.safetensors [7f96a1a9ca]", // # 指定大模型
+        "sd_vae": "Automatic" //# 指定vae 默认自动
+    },
+    "override_settings_restore_afterwards": "True" // override_settings 是否在之后恢复覆盖的设置 默认是True
+}
