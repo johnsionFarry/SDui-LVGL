@@ -32,37 +32,38 @@ I’ve only been learning Linux for six months, and I haven’t previously worke
 ### 基础界面
 
 <div align="center">
-  <img src="https://github.com/Jiong-Ge/SDui-LVGL/blob/main/README.assets/1.jpg" alt="Image 1">
+  <img src="https://github.com/johnsionFarry/SDui-LVGL/blob/main/README.assets/1.jpg" alt="Image 1">
   <p>基础界面（直接选择风格和提示词进行文生图）</p>
 </div>
 
+
 <div align="center">
-  <img src="https://github.com/Jiong-Ge/SDui-LVGL/blob/main/README.assets/2.jpg" alt="Image 2">
+  <img src="https://github.com/johnsionFarry/SDui-LVGL/blob/main/README.assets/2.jpg" alt="Image 2">
   <p>图生图</p>
 </div>
 
 <div align="center">
-  <img src="https://github.com/Jiong-Ge/SDui-LVGL/blob/main/README.assets/3.jpg" alt="Image 3">
+  <img src="https://github.com/johnsionFarry/SDui-LVGL/blob/main/README.assets/3.jpg" alt="Image 3">
   <p>图生图</p>
 </div>
 
 <div align="center">
-  <img src="https://github.com/Jiong-Ge/SDui-LVGL/blob/main/README.assets/4.jpg" alt="Image 4">
+  <img src="https://github.com/johnsionFarry/SDui-LVGL/blob/main/README.assets/4.jpg" alt="Image 4">
   <p>带控制网的文生图</p>
 </div>
 
 <div align="center">
-  <img src="https://github.com/Jiong-Ge/SDui-LVGL/blob/main/README.assets/5.jpg" alt="Image 5">
+  <img src="https://github.com/johnsionFarry/SDui-LVGL/blob/main/README.assets/5.jpg" alt="Image 5">
   <p>带控制网的文生图</p>
 </div>
 
 <div align="center">
-  <img src="https://github.com/Jiong-Ge/SDui-LVGL/blob/main/README.assets/6.jpg" alt="Image 5">
+  <img src="https://github.com/johnsionFarry/SDui-LVGL/blob/main/README.assets/6.jpg" alt="Image 5">
   <p>开发界面</p>
 </div>
 
 <div align="center">
-  <img src="https://github.com/Jiong-Ge/SDui-LVGL/blob/main/README.assets/7.png" alt="Image 5">
+  <img src="https://github.com/johnsionFarry/SDui-LVGL/blob/main/README.assets/7.png" alt="Image 5">
   <p>调试界面</p>
 </div>
 
