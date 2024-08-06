@@ -13,6 +13,8 @@ The principle behind it is roughly as follows: first, the canvas buffer is extra
 
 I’ve only been learning Linux for six months, and I haven’t previously worked with LVGL on any projects, so this code may appear rudimentary. However, with your efforts, it can improve.
 
+***该账号为最近注册，~~因为旧账号早前与TD和FH势力对战，反而导致自身被封(恼)~~，因此项目所有记录都消失了(已从旧项目克隆相关文件)，LVGL文件夹下的内容，由于文件过多，打包为了7z文件，需要解压到当前目录。***
+
 ## 1. 项目说明
 
 本项目的前身是作为我的本科毕业设计，如今已经结束了相关流程，因此开源了此工程。
